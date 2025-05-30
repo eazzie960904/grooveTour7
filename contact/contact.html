@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./contact.css" />
+    <link rel="stylesheet" href="../reset.css" />
+    <script defer src="../script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="logo">
+      <a href="../index.html">
+        <img src="../img/main/logo.png" alt="logo" />
+      </a>
+    </section>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../aboutus/aboutus.html">About us</a></li>
+          <li><a href="../whykorea/whykorea.html">Why korea</a></li>
+          <li>
+            <a href="../preffered/preffered.html">Preffered Destination</a>
+          </li>
+          <li>
+            <a href="../vegantour/vegantour.html">Tour programs</a>
+            <ul>
+              <li><a href="../vegantour/vegantour.html">veganTour</a></li>
+              <li><a href="../luxurytour/luxury.html">luxuryTour</a></li>
+              <li>
+                <a href="../signaturetour/signature.html">signatureTour</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="./contact.html"> Contact us </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <input type="checkbox" id="menuIcon" />
+      <label for="menuIcon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <div class="sidebar">
+        <div><a href="../aboutus/aboutus.html">About us</a></div>
+        <div><a href="../whykorea/whykorea.html">why korea</a></div>
+        <div>
+          <a href="../preffered/preffered.html">Preffered Destination</a>
+        </div>
+        <div><a href="../vegantour/vegantour.html">Tour</a></div>
+        <div><a href="../contact/contact.html">contact us</a></div>
+      </div>
+    </section>
+
+    <section class="contactTit">Contact us</section>
+
+    <section class="contactImg">
+      <img src="../img/contactUs/palace.png" alt="palace" />
+    </section>
+
+    <section class="contactInfo">
+      <div class="contactInfoDesc">
+        <div class="contactInfoDescAdd">
+          <div class="contactInfoDescAddTit"><b>OUR</b> ADDRESS</div>
+          <div>
+            Lorem ipsum, dolor sit amet<br />
+            consectetur adipisicing elit.
+          </div>
+          <div>
+            <div><b>Email:</b>papageno335@gmail.com</div>
+            <div><b>TEL:</b>+82 010-4838-7375</div>
+            <div><b>FAX:</b>0123456789</div>
+          </div>
+        </div>
+        <div class="contactInfoDescHour">
+          <div class="contactInfoDescHourTit"><b>OPENING</b> HOURS</div>
+          <div class="contactInfoDescHourTime"><b>9:00AM - 18:00PM</b></div>
+          <div class="contactInfoDescHourDay">Monday - Friday</div>
+        </div>
+      </div>
+    </section>
+
+    <div id="map" style="width: 500px; height: 400px"></div>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=237d2efd30e6b590cad057453dcbe195"
+    ></script>
+    <script>
+      var container = document.getElementById("map");
+      var options = {
+        center: new kakao.maps.LatLng(33.450701, 126.570667),
+        level: 3,
+      };
+
+      var map = new kakao.maps.Map(container, options);
+    </script>
+
+    <footer>
+      <div class="footerInner">
+        <div class="snsLogo">
+          <a href="https://www.facebook.com">
+            <img src="../img/footer/facebook.png" alt="facebook" />
+          </a>
+          <a href="https://www.instagram.com">
+            <img src="../img/footer/instagram.png" alt="instagram" />
+          </a>
+          <a href="https://www.x.com">
+            <img src="../img/footer/twitter.png" alt="twitter" />
+          </a>
+        </div>
+        <div>
+          <div>Groove Tours Seoul, Korea</div>
+          <div>
+            Business Lincense 00000000-00-000000<br />
+            Tel.010-4838-7375<br />
+            Fax 00-000-0000
+          </div>
+        </div>
+        <div>Hosting by Park</div>
+        <div class="law">
+          <div>이용약관</div>
+          <div>개인정보 처리방침</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
